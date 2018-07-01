@@ -14,9 +14,9 @@ namespace TextReader
                 sr = File.OpenText(path);
                 Console.WriteLine(sr.ReadToEnd());
             }
-            catch (FileNotFoundException fnfe)
+            catch (FileNotFoundException notFount)
             {
-                Console.WriteLine(fnfe.Message);
+                Console.WriteLine(notFount.Message);
             }
             finally
             {
